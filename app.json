@@ -1,0 +1,70 @@
+{
+  "id": "com.fakro",
+  "name": {
+    "en": "Fakro"
+  },
+  "version": "0.0.2",
+  "compatibility": ">=0.10.3",
+  "description": {
+    "en": "Fakro devices for Homey",
+      "nl": "Fakro producten for Homey"
+
+  },
+  "category": [
+    "appliances",
+    "climate"
+  ],
+  "images": {
+    "large": "/assets/images/large.jpg",
+    "small": "/assets/images/small.jpg"
+  },
+  "author": {
+    "name": "Don van Meel",
+    "email": "donvmeel@hotmail.com"
+  },
+  "drivers": [
+    {
+      "id": "ARZ-ZWave",
+      "name": {
+        "en": "Roof Window Roller Shutter",
+        "nl": "Rolluik voor dakraam"
+      },
+      "zwave": {
+        "manufacturerId": 133,
+        "productTypeId": 2,
+        "productId": 2,
+        "learnmode": {
+          "image": "/drivers/ARZ-ZWave/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press and hold the pushbutton P for 0.5 sec",
+            "nl": "Druk en houd voor 0,5 sec de drukknop P op het apparaat"
+          }
+        },
+        "associationGroups": [ 1 ]
+      },
+      "class": "windowcoverings",
+      "capabilities": [
+        "windowcoverings_state"
+      ],
+      "mobile": {
+        "components": [
+          {
+            "capabilities": [
+            ],
+            "id": "icon"
+          },
+          {
+            "capabilities": [
+              "windowcoverings_state"
+            ],
+            "id": "ternary"
+          }
+        ]
+      },
+      "images": {
+        "large": "/drivers/ARZ-ZWave/assets/images/large.jpg",
+        "small": "/drivers/ARZ-ZWave/assets/images/small.jpg"
+      }      
+    }
+  ]
+}
