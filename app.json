@@ -3,8 +3,8 @@
   "name": {
     "en": "Fakro"
   },
-  "version": "0.0.2",
-  "compatibility": ">=0.10.3",
+  "version": "0.0.3",
+  "compatibility": ">=0.10.0",
   "description": {
     "en": "Fakro devices for Homey",
       "nl": "Fakro producten for Homey"
@@ -63,6 +63,49 @@
       "images": {
         "large": "/drivers/ARZ-ZWave/assets/images/large.jpg",
         "small": "/drivers/ARZ-ZWave/assets/images/small.jpg"
+      }
+    },
+    {
+      "id": "ZWS", 
+      "name": {
+        "en": "Chain Actuator",
+        "nl": "Kettingmotor"
+      },
+      "zwave": {
+        "manufacturerId": 133,
+        "productTypeId": 3,
+        "productId": 1,
+        "learnmode": {
+          "image": "/drivers/ZWS/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press and hold the pushbutton P for 0.5 sec",
+            "nl": "Druk en houd voor 0,5 sec de drukknop P op het apparaat" 
+          }
+        },
+        "associationGroups": [ 1 ]
+      },
+      "class": "windowopenings",
+      "capabilities": [
+        "windowopeningss_state"
+      ],
+      "mobile": {
+        "components": [
+          {
+            "capabilities": [
+            ],
+            "id": "icon"
+          },
+          {
+            "capabilities": [
+              "windowopenings_state"
+            ],
+            "id": "ternary"
+          }
+        ]
+      },
+      "images": {
+        "large": "/drivers/ZWS/assets/images/large.jpg",
+        "small": "/drivers/ZWS/assets/images/small.jpg"
       }      
     }
   ]
