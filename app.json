@@ -86,7 +86,7 @@
       },
       "class": "windowopenings",
       "capabilities": [
-        "windowopeningss_state"
+        "windowopenings_state"
       ],
       "mobile": {
         "components": [
