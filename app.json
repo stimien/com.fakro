@@ -3,7 +3,7 @@
   "name": {
     "en": "Fakro"
   },
-  "version": "0.0.3",
+  "version": "0.0.4",
   "compatibility": ">=0.10.0",
   "description": {
     "en": "Fakro devices for Homey",
@@ -84,7 +84,7 @@
         },
         "associationGroups": [ 1 ]
       },
-      "class": "windowopenings",
+      "class": "other",
       "capabilities": [
         "windowopenings_state"
       ],
