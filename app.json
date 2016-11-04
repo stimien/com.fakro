@@ -3,7 +3,7 @@
   "name": {
     "en": "Fakro"
   },
-  "version": "0.0.4",
+  "version": "0.0.5",
   "compatibility": ">=0.10.0",
   "description": {
     "en": "Fakro devices for Homey",
@@ -84,9 +84,9 @@
         },
         "associationGroups": [ 1 ]
       },
-      "class": "other",
+      "class": "windowcoverings",
       "capabilities": [
-        "windowopenings_state"
+        "windowcoverings_state"
       ],
       "mobile": {
         "components": [
@@ -97,7 +97,7 @@
           },
           {
             "capabilities": [
-              "windowopenings_state"
+              "windowcoverings_state"
             ],
             "id": "ternary"
           }
